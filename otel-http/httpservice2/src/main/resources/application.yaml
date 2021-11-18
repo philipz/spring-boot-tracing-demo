@@ -1,6 +1,15 @@
 spring:
   application:
     name: "http-service2"
+  sleuth:
+    otel:
+      exporter:
+        otlp:
+          endpoint: https://1eb8cf0bf1b94385be0f7d767a0996c3.apm.southeastasia.azure.elastic-cloud.com:443
+          headers:
+            authorization: Bearer mDDi5kgdTjCkKPJwz6
+            #x-honeycomb-team: 3073cad3b70eceed7d10e30fbfaee9f9
+            #x-honeycomb-dataset: dataset
 
 server:
   port: 8081
